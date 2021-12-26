@@ -1,0 +1,15 @@
+body {
+	font-family: 'Xanh Mono';
+}
+
+a {
+	color: MediumSlateBlue;
+	text-decoration: none;
+	/* border-bottom: 1px solid MediumSlateBlue; */
+}
+a:hover {
+	font-style: italic;
+}
+a:not(:hover) .mouseover-only {
+	display: none;
+}
