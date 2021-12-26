@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-US" dir="ltr">
 	<head>
-		<title>gabe</title>
+		<meta charset="UTF-8" />
+
+		<title>Gabe Mitnick</title>
 		<link rel="stylesheet" href="style.css" />
+
+		<meta name="author" content="Gabe Mitnick" />
+		<meta
+			name="description"
+			content="Gabriel Mitnick is a developer and computer science student in the San Francisco Bay Area."
+		/>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +22,7 @@
 			if (
 				window.location.hash ==
 				// this string is "the internet cave" in full width unicode characters
-				"#%20%EF%BD%94%EF%BD%88%EF%BD%85%20%EF%BD%89%EF%BD%8E%EF%BD%94%EF%BD%85%EF%BD%92%EF%BD%8E%EF%BD%85%EF%BD%94%20%EF%BD%83%EF%BD%81%EF%BD%96%EF%BD%85"
+				"#%EF%BD%94%EF%BD%88%EF%BD%85%EF%BD%89%EF%BD%8E%EF%BD%94%EF%BD%85%EF%BD%92%EF%BD%8E%EF%BD%85%EF%BD%94%EF%BD%83%EF%BD%81%EF%BD%96%EF%BD%85"
 			) {
 				const urls = [
 					"https://puzzle.suchfun.net/",
@@ -61,19 +69,40 @@
 			<a href="misc/hackerman.png">Computer Science</a>.
 		</p>
 		<ul id="links">
-			<li><a href="misc/gabe-resume.pdf" target="_blank">my resume</a></li>
+			<li>
+				<a href="misc/gabe-resume.pdf" target="_blank">
+					my résumé<span class="mouseover-only">: a pdf</span>
+				</a>
+			</li>
 			<li><a href="https://www.linkedin.com/in/gabriel-mitnick/" target="_blank"> my linkedin </a></li>
-			<li><a href="https://github.com/Gabe-Mitnick" target="_blank"> my github </a></li>
 			<li>
-				<a href="mailto:g1@berkeley.edu" target="_blank">
-					my email<span class="mouseover-only">: g1@berkeley.edu</span></a
+				<a href="https://github.com/Gabe-Mitnick" target="_blank">
+					my github<span class="mouseover-only">: @Gabe-Mitnick</span>
+				</a>
+			</li>
+			<li>
+				<!-- obfuscated email with email-obfuscator.com -->
+				<a
+					href="javascript:location='mailto:\u0067\u0031\u0040\u0062\u0065\u0072\u006b\u0065\u006c\u0065\u0079\u002e\u0065\u0064\u0075';void 0"
+					target="_blank"
 				>
+					my email<span class="mouseover-only"
+						>:
+						<script type="text/javascript">
+							document.write(
+								"\u0067\u0031\u0040\u0062\u0065\u0072\u006b\u0065\u006c\u0065\u0079\u002e\u0065\u0064\u0075"
+							);
+						</script>
+					</span>
+				</a>
 			</li>
 			<li>
-				<a href="">my favorite letter<span class="mouseover-only">: Ѯ</span></a>
+				<a href="https://en.wikipedia.org/wiki/Ksi_(Cyrillic)" target="_blank"
+					>my favorite letter<span class="mouseover-only">: Ѯ</span>
+				</a>
 			</li>
 			<li>
-				<a href="# ｔｈｅ ｉｎｔｅｒｎｅｔ ｃａｖｅ" onclick="enterInternetCave()" target="_blank">
+				<a href="#ｔｈｅｉｎｔｅｒｎｅｔｃａｖｅ" target="_blank">
 					my favorite webpages<span class="mouseover-only"
 						>: click to randomly select a link and enter the internet cave</span
 					>
