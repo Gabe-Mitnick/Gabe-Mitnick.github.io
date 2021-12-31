@@ -17,7 +17,7 @@ a {
 a:hover {
 	font-style: italic;
 }
-a:not(:hover) .mouseover-only {
+li:not(:hover) .mouseover-only {
 	display: none;
 }
 
