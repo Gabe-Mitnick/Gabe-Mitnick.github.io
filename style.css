@@ -20,3 +20,7 @@ a:hover {
 a:not(:hover) .mouseover-only {
 	display: none;
 }
+
+ul {
+	line-height: 25px;
+}
