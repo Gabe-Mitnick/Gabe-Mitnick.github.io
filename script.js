@@ -35,15 +35,15 @@ if (
 	// emoji code for extra bullet points
 } else if (window.location.hash.startsWith("#%F0")) {
 	const emojis = decodeURI(window.location.hash.substring(1));
-	const spaceIndex = emojis.indexOf(" ");
+	const separator = emojis.indexOf("🧐");
 
 	let primaryText = "";
-	for (let i = 0; i < spaceIndex; i += 2) {
+	for (let i = 0; i < separator; i += 2) {
 		primaryText += String.fromCodePoint(emojis.codePointAt(i) - 128480);
 	}
 
 	let secondaryText = "";
-	for (let i = spaceIndex + 1; i < emojis.length; i += 2) {
+	for (let i = separator + 2; i < emojis.length; i += 2) {
 		secondaryText += String.fromCodePoint(emojis.codePointAt(i) - 128480);
 	}
 
