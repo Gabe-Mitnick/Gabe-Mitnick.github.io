@@ -55,3 +55,22 @@ if (
 		list.appendChild(newItem);
 	});
 }
+
+/* // <!-- When you press F, friends pop up --> */
+document.body.onkeydown = evt => {
+  if (evt.key.toLowerCase() == "f") {
+    let title = document.createElement("dt");
+    title.innerHTML = `Friends`;
+    document.getElementsByTagName("dl")[0].appendChild(title);
+
+    [
+      {friend: "Kev", website: "https://kevwang.dev/"}, 
+      {friend: "Nikhil", website: "https://nikhiljha.com/"}, 
+      {friend: "Sebi", website: "https://sebiszafir.com/"}
+    ].forEach(({ friend, website }) => {
+      let child = document.createElement("dd");
+      child.innerHTML = `<a href="${website}" target="_blank">${friend}</a>`;
+      document.getElementsByTagName("dl")[0].appendChild(child);
+    });
+  }
+}
