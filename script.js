@@ -7,11 +7,10 @@ if (
 	const urls = [
 		"https://puzzle.suchfun.net/",
 		"https://xanadu.com",
-		"https://somethingawful.com/hosted/jeffk",
 		"http://mspaintadventures.com/sweetbroandhellajeff/",
 		"http://textfiles.com/",
 		"http://catb.org/jargon/html",
-		"https://johnclilly.com/hub.html",
+		"http://johnclilly.com/hub.html",
 		"https://sbnation.com/a/17776-football",
 		"https://horg.com/",
 		"https://truegamer.net/SA_911/911%20SATHREAD",
@@ -22,13 +21,15 @@ if (
 		"https://billwurtz.com",
 		"https://timecube.2enp.com",
 		"https://gifcities.org",
-		"https://if-jesus-returns-kill-him-again.com",
 		"http://subgenius.com",
 		"http://phrack.org",
+		"https://cultdeadcow.com/",
 		"https://laglab.org",
 		"http://art.teleportacia.org",
 		"https://blog.geocities.institute",
-		"https://shedd.ml",
+		"https://nevertellmetheodds.org",
+		"https://www.studiopankara.com/",
+		"https://ascii.erikveland.com/",
 	];
 	const i = Math.floor(Math.random() * urls.length);
 	location.href = urls[i];
